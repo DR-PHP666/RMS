@@ -1,0 +1,12 @@
+<?php 
+include('dbcon.php');
+$delete=mysql_query("delete from order_det where id='".$_POST['id']."'");
+if($delete)
+{
+	
+}
+else
+{
+	echo mysql_error();
+}	
+?>
